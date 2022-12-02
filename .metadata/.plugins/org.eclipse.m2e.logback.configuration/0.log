@@ -1,0 +1,135 @@
+2022-12-02 16:29:51,901 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-12-02 16:33:31,276 [Worker-12: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.edix.cajerovirtual:a3-cajero-virtual:0.0.1-SNAPSHOT @ D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\pom.xml.
+2022-12-02 16:33:31,838 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /a3-cajero-virtual/src/main/java
+2022-12-02 16:33:31,838 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /a3-cajero-virtual/src/main/resources
+2022-12-02 16:33:31,843 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /a3-cajero-virtual/src/main/resources
+2022-12-02 16:33:31,848 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /a3-cajero-virtual/src/test/java
+2022-12-02 16:33:32,854 [Worker-12: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2022-12-02 16:33:32,857 [Worker-12: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-12-02 16:33:33,059 [Worker-12: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.edix.cajerovirtual:a3-cajero-virtual:0.0.1-SNAPSHOT @ D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\pom.xml.
+2022-12-02 16:33:33,330 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /a3-cajero-virtual/src/main/java
+2022-12-02 16:33:33,330 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /a3-cajero-virtual/src/main/resources
+2022-12-02 16:33:33,330 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /a3-cajero-virtual/src/main/resources
+2022-12-02 16:33:33,330 [Worker-12: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /a3-cajero-virtual/src/test/java
+2022-12-02 16:33:33,689 [Worker-12: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-12-02 16:33:34,015 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:33:34,026 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:33:34,028 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:34:38,951 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.edix.cajerovirtual:a3-cajero-virtual:0.0.1-SNAPSHOT @ D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\pom.xml.
+2022-12-02 16:34:39,178 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:34:39,179 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:34:39,182 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:34:40,261 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/10.1.1/tomcat-embed-jasper-10.1.1-sources.jar
+2022-12-02 16:34:40,359 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-jasper/10.1.1/tomcat-embed-jasper-10.1.1-sources.jar
+2022-12-02 16:34:40,361 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat.embed:tomcat-embed-jasper:10.1.1
+2022-12-02 16:34:40,430 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/10.1.1/tomcat-annotations-api-10.1.1-sources.jar
+2022-12-02 16:34:40,439 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:34:40,451 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:34:40,453 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:34:40,519 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-annotations-api/10.1.1/tomcat-annotations-api-10.1.1-sources.jar
+2022-12-02 16:34:40,521 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.tomcat:tomcat-annotations-api:10.1.1
+2022-12-02 16:34:41,532 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:34:41,532 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:34:41,534 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:35:43,594 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:35:43,599 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:35:43,601 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:37:08,368 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:37:08,379 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:37:08,383 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:37:12,608 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:37:12,611 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:37:12,613 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:40:29,181 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:40:29,187 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:40:29,190 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:41:33,131 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:41:33,135 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:41:33,138 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:43:33,045 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:43:33,050 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:43:33,052 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:43:43,897 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:43:43,900 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:43:43,902 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:47:52,917 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:47:52,927 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:47:52,930 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:48:05,494 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:48:05,498 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:48:05,499 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:48:14,693 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:48:14,697 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:48:14,698 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:48:57,652 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:48:57,656 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:48:57,668 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:49:02,692 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:49:02,695 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:49:02,697 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:50:10,049 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:50:10,053 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:50:10,055 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:50:27,881 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:50:27,884 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:50:27,886 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:50:57,352 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:50:57,356 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:50:57,357 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:51:40,244 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:51:40,250 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:51:40,252 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:51:41,279 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:51:41,283 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:51:41,285 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:54:55,265 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:54:55,265 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:54:55,266 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:55:04,173 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:04,173 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:04,174 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:55:33,300 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:33,300 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:33,302 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:55:58,046 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:58,046 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:55:58,047 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 16:56:38,378 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 16:56:38,382 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 16:56:38,384 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:00:56,389 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:00:56,392 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:00:56,394 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:01:55,864 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:01:55,867 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:01:55,869 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:02:12,708 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:12,708 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:12,709 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:02:39,631 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:39,632 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:39,632 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:02:45,756 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:45,756 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:02:45,757 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:07:08,471 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:07:08,475 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:07:08,477 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:07:36,959 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:07:36,959 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:07:36,960 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:07:54,331 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:07:54,335 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:07:54,337 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:08:51,359 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:08:51,362 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:08:51,363 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:09:41,496 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:09:41,499 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:09:41,501 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:11:32,747 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:11:32,752 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:11:32,754 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
+2022-12-02 17:13:22,795 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-12-02 17:13:22,799 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-02 17:13:22,800 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\Personal Storage\Academic\CFGS Desarrollo de Aplicaciones Web\2º año\1º trimestre\Desarrollo web en entorno servidor I\Workspaces\a3-cajero-virtual\a3-cajero-virtual\src\test\resources
