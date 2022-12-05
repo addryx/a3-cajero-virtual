@@ -23,36 +23,41 @@ import jakarta.persistence.TemporalType;
  * @Table + el nombre de la tabla, para que los relacione. 
  * 
  */
-@Entity
-@Table(name="movimientos")
-public class Movimiento implements Serializable {
+@Entity // Lo usamos para declarar que una clase es una entidad (una tabla BBDD).
+@Table(name="movimientos") // El @TABLE es la denominación de la tabla de la BBDD
+public class Movimiento implements Serializable { // Denominación de la clase Java
 	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Este valor es un generador de claves así que le ponemos identity, para que sea auto-increment.
 	 * 
 	 */
-	@Id
+	@Id // Primary key de la tabla Movimientos
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_movimiento")
-	private int idMovimiento;
+	@Column(name="id_movimiento") // La anotación @COLUMN es la denominación de la columna que se encuentra en la BBDD
+	private int idMovimiento; // Aquí, cambiamos el nombre de la columna, y lo ponemos como se tienen que llamar en la clase Java
 
 	private double cantidad;
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.TIMESTAMP) // La anotación @TEMPORAL es debido a que el tipo de variable es DATE, tipo fecha
 	private Date fecha;
 
 	private String operacion;
 
 	//bi-directional many-to-one association to Cuenta
-	@ManyToOne
-	@JoinColumn(name="id_cuenta")
-	private Cuenta cuenta;
-
+	@ManyToOne // De muchos a 1 -> En este caso de muchos movimientos a una sola cuenta
+	@JoinColumn(name="id_cuenta") // Denominación de la columna de la BBDD.
+	private Cuenta cuenta; // La transformación de la columna a una clase Java 
+	
+	/*
+	 * Contructor de Movimiento sin parámetros
+	 */	
 	public Movimiento() {
 	}
 	
-
+	/*
+	 * Constructor de Movimiento con parámetros
+	 */
 	public Movimiento(int idMovimiento, double cantidad, Date fecha, String operacion, Cuenta cuenta) {
 		super();
 		this.idMovimiento = idMovimiento;
@@ -63,7 +68,9 @@ public class Movimiento implements Serializable {
 	}
 
 
-
+	/*
+	 * Getters & Setters
+	 */
 	public int getIdMovimiento() {
 		return this.idMovimiento;
 	}
@@ -104,13 +111,17 @@ public class Movimiento implements Serializable {
 		this.cuenta = cuenta;
 	}
 
-
+	/*
+	 * Método hashcode
+	 */
 	@Override
 	public int hashCode() {
 		return Objects.hash(idMovimiento);
 	}
 
-
+	/*
+	 * Método equals
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -120,8 +131,10 @@ public class Movimiento implements Serializable {
 		Movimiento other = (Movimiento) obj;
 		return idMovimiento == other.idMovimiento;
 	}
-
-
+	
+	/*
+	 * Método toString
+	 */
 	@Override
 	public String toString() {
 		return "Movimiento [idMovimiento=" + idMovimiento + ", cantidad=" + cantidad + ", fecha=" + fecha

@@ -7,12 +7,12 @@ import com.edix.cajerovirtual.entitybeans.Movimiento;
 
 public interface IntMovimientoDao {
 	
-	List<Movimiento> findMovimientosByIdCuenta(int idCuenta);
+	List<Movimiento> findMovimientosByIdCuenta(int idCuenta); // Método que lista los movimientos de una cuenta
+	
+	List<Movimiento> find10UltimosMovimientosbyIdCuenta(int idCuenta); // Método que muestra el listado de los últimos movimientos
 
-	List<Movimiento> find10UltimosMovimientosbyIdCuenta(int idCuenta);
+	int movimientoExtraccion(Cuenta cuenta, double cantidad); // Método que permite crear un movimiento que extrae dinero de una cuenta
 
-	int movimientoExtraccion(Cuenta cuenta, double cantidad);
-
-	int movimientoIngreso(Cuenta cuenta, double cantidad);
+	int movimientoIngreso(Cuenta cuenta, double cantidad); // Método que permite crear un movimiento que ingrese dinero en una cuenta
 	
 }

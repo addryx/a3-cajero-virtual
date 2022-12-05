@@ -16,12 +16,19 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 
 	@Autowired
 	private MovimientoRepository mRepo;
-
+	
+	/*
+	 * Método que lista los movimientos de una cuenta
+	 */
 	@Override
 	public List<Movimiento> findMovimientosByIdCuenta(int idCuenta) {
 		return mRepo.findMovimientosByIdCuenta(idCuenta);
 	}
-
+	
+	/*
+	 * Método que muestra un listado de los últimos movimientos que ha tenido una cuenta.
+	 * Hemos fijado que muestre un listado máximo de 10 movimientos.
+	 */
 	@Override
 	public List<Movimiento> find10UltimosMovimientosbyIdCuenta(int idCuenta) {
 		List<Movimiento> lista = new ArrayList<Movimiento>();
@@ -35,7 +42,10 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		}
 		return lista;
 	}
-
+	
+	/*
+	 * Método que permite crear una retirada de una cuenta
+	 */
 	@Override
 	public int movimientoExtraccion(Cuenta cuenta, double cantidad) {
 		// Creamos un nuevo movimiento
@@ -44,7 +54,8 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		movimiento.setFecha(new Date());
 		movimiento.setOperacion("Extracción");
 		movimiento.setCantidad(cantidad);
-		// Añadimos el movimiento a la lista de movimientos
+		
+		// Ahora añadimos el movimiento a la lista de movimientos
 		int filas = 0;
 		try {
 			mRepo.save(movimiento);
@@ -55,7 +66,10 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		}
 		return filas;
 	}
-
+	
+	/*
+	 * Método que permite crear un ingreso de una cuenta
+	 */
 	@Override
 	public int movimientoIngreso(Cuenta cuenta, double cantidad) {
 		Movimiento movimiento = new Movimiento();
@@ -63,7 +77,8 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		movimiento.setFecha(new Date());
 		movimiento.setOperacion("Ingreso");
 		movimiento.setCantidad(cantidad);
-		// Añadimos el movimiento a la lista de movimientos
+		
+		// Ahora añadimos el movimiento a la lista de movimientos
 		int filas = 0;
 		try {
 			mRepo.save(movimiento);

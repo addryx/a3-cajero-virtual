@@ -13,12 +13,18 @@ public class CuentaDaoImpl implements IntCuentaDao {
 
 	@Autowired
 	private CuentaRepository CRepo;
-
+	
+	/*
+	 * Con este método mostramos una lista con todas las cuentas.
+	 */
 	@Override
 	public List<Cuenta> findAll() {
 		return CRepo.findAll();
 	}
-
+	
+	/*
+	 * Con este método encontramos una cuenta a través de su idCuenta, y en caso de no existir devuelve un null.
+	 */
 	@Override
 	public Cuenta findById(int idCuenta) {
 		Cuenta cuenta = new Cuenta();
@@ -33,9 +39,11 @@ public class CuentaDaoImpl implements IntCuentaDao {
 
 	@Override
 	public int ingresarDinero(Cuenta cuenta, double cantidad) {
-		// Actualizamos el saldo de la cuenta
+		
+		// Aquí actualizamos el saldo de la cuenta tras el ingreso
 		cuenta.setSaldo(cuenta.getSaldo() + cantidad);
-		// Actualizamos los valores en la BBDD
+		
+		// Y tras la operación actualizamos los valores en nuestra BBDD
 		int filas = 0;
 		try {
 			CRepo.save(cuenta);
@@ -49,10 +57,11 @@ public class CuentaDaoImpl implements IntCuentaDao {
 
 	@Override
 	public int extraerDinero(Cuenta cuenta, double cantidad) {
-		// Actualizamos el saldo de la cuenta
+		
+		// Aquí actualizamos el salado de la cuenta tras la retirada
 		cuenta.setSaldo(cuenta.getSaldo() - cantidad);
 
-		// Actualizamos los valores en la BBDD
+		// Y tras la operación actualizamos los valores en la BBDD
 		int filas = 0;
 		try {
 			CRepo.save(cuenta);
