@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.edix.cajerovirtual.entitybeans.Cuenta;
 import com.edix.cajerovirtual.entitybeans.Movimiento;
+import com.edix.cajerovirtual.repository.MovimientoRepository;
 
 @Service
 public class MovimientoDaoImpl implements IntMovimientoDao {

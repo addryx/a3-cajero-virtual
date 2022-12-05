@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.edix.cajerovirtual.entitybeans.Cuenta;
+import com.edix.cajerovirtual.repository.CuentaRepository;
 
 @Service
 public class CuentaDaoImpl implements IntCuentaDao {
