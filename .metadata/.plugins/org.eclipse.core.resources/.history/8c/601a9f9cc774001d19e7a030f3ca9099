@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Transferencia</title>
+</head>
+<body>
+	<p>${fallo}</p>
+	<form action="/transferencia" method="post">
+			<label for="cantidad" class="form-label">Introduce Cantidad:</label>
+			<input type="number" step="0.01" min="1" name="cantidad"
+				class="form-control" id="cantidad" required>
+
+		</div>
+		<div class="mb-3">
+			<label for="idCuenta" class="form-label">Introduce Destino(ID
+				Cuenta):</label> <input type="number" name="idCuenta" class="form-control"
+				id="idCuenta" required>
+
+		</div>
+
+		<button type="submit" class="btn btn-primary">Transferir</button>
+
+	</form>
+</body>
+</html>

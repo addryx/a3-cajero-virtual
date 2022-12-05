@@ -11,42 +11,28 @@ import com.edix.cajerovirtual.repository.CuentaRepository;
 @Service
 public class CuentaDaoImpl implements IntCuentaDao {
 
-	/*
-	 * Lo que hace un autowired es buscar un objeto manejado (beans) que implementen
-	 * determinada interfaz para hacer referencia a él. De esta manera no es
-	 * neceario crear una instancia nueva del objeto cada vez que se necesite la
-	 * funcionalidad de determinada clase
-	 */
-
 	@Autowired
-	private IntCuentaDao CRepo;
+	private CuentaRepository CRepo;
 
 	@Override
 	public List<Cuenta> findAll() {
-
 		return CRepo.findAll();
 	}
 
-	// Con este metodo buscamos una cuenta segun su idCuenta y si no existe
-	// devolvemos un null.
 	@Override
 	public Cuenta findById(int idCuenta) {
-		// TODO Auto-generated method stub
 		Cuenta cuenta = new Cuenta();
 		cuenta.setIdCuenta(idCuenta);
 		int pos = CRepo.findAll().indexOf(cuenta);
 		if (pos == -1) {
 			return null;
 		} else {
-			return CRepo.findById(idCuenta);
+			return CRepo.findById(idCuenta).orElse(null);
 		}
-
 	}
 
 	@Override
 	public int ingresarDinero(Cuenta cuenta, double cantidad) {
-		// TODO Auto-generated method stub
-
 		// Actualizamos el saldo de la cuenta
 		cuenta.setSaldo(cuenta.getSaldo() + cantidad);
 		// Actualizamos los valores en la BBDD
@@ -59,12 +45,10 @@ public class CuentaDaoImpl implements IntCuentaDao {
 
 		}
 		return filas;
-
 	}
 
 	@Override
 	public int extraerDinero(Cuenta cuenta, double cantidad) {
-		// TODO Auto-generated method stub
 		// Actualizamos el saldo de la cuenta
 		cuenta.setSaldo(cuenta.getSaldo() - cantidad);
 
@@ -79,5 +63,4 @@ public class CuentaDaoImpl implements IntCuentaDao {
 		}
 		return filas;
 	}
-
 }

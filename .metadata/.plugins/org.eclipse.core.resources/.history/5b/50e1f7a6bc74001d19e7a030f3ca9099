@@ -1,0 +1,68 @@
+package com.edix.cajerovirtual.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.edix.cajerovirtual.dao.IntCuentaDao;
+import com.edix.cajerovirtual.entitybeans.Cuenta;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class HomeController {
+	/*
+	 * Lo que hace un autowired es buscar un objeto manejado (beans) que implementen
+	 * determinada interfaz para hacer referencia a él. De esta manera no es
+	 * neceario crear una instancia nueva del objeto cada vez que se necesite la
+	 * funcionalidad de determinada clase
+	 */
+
+	@Autowired
+	private IntCuentaDao icuen;
+
+	/*
+	 * Esta anotación se utiliza para asignar solicitudes HTTP GET a métodos de
+	 * controlador específicos. Este es nuestro comienzo de la aplicación, entramos
+	 * por / y nos sale el jsp correspondiente al login
+	 */
+
+	@GetMapping("/")
+	public String Login() {
+		return "login";
+	}
+
+	/*
+	 * Esta anotación se utiliza para asignar solicitudes HTTP POST a métodos de
+	 * controlador específicos. El Interface HttpSession proporciona métodos que
+	 * almacenan y recuperan. Propiedades de Sesión Estándard como un identificador
+	 * de sesión. En este caso lo utilizaremos para almacenar el valor de idCuenta
+	 */
+
+	@PostMapping("/login")
+	public String empleadoLogueado(Model model, HttpSession sesionCuenta, @RequestParam("idCuenta") int idCuenta) {
+		// Buscamos la cuenta existente por su idCuenta
+		Cuenta cuenta = icuen.findById(idCuenta);
+		// si existe, avanzamos al panel del cajero y llevamos el atributo de sesion que es la cuenta
+		if (cuenta != null) {
+			sesionCuenta.setAttribute("cuenta", cuenta);
+			return "redirect:/opcionesCajero";
+			// Si no existe seguimos en la pagina de login y mostramos un mensaje de error.
+		} else {
+			model.addAttribute("fallo", "El numero de cuenta no existe");
+			return "login";
+		}
+	}
+
+	// Este es el metodo para cerrar la sesion de la cuenta
+
+	@GetMapping("/logout")
+	public String logout(Model model, HttpSession sesionCuenta) {
+		sesionCuenta.removeAttribute("cuenta");
+		sesionCuenta.invalidate();
+		return "redirect:/";
+	}
+}

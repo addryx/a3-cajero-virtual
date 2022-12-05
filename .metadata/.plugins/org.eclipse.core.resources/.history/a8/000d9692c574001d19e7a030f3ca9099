@@ -1,0 +1,58 @@
+package com.edix.cajerovirtual.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.edix.cajerovirtual.dao.IntCuentaDao;
+import com.edix.cajerovirtual.dao.IntMovimientoDao;
+import com.edix.cajerovirtual.entitybeans.Cuenta;
+import com.edix.cajerovirtual.entitybeans.Movimiento;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class HomeController {
+
+	@Autowired
+	private IntCuentaDao icuen;
+	
+	@Autowired
+	private IntMovimientoDao imov;
+
+	@GetMapping("/")
+	public String Login() {
+		return "login";
+	}
+
+	@PostMapping("/login")
+	public String empleadoLogueado(Model model, HttpSession sesionCuenta, @RequestParam("idCuenta") int idCuenta) {
+		// Buscamos la cuenta existente por su idCuenta
+		Cuenta cuenta = icuen.findById(idCuenta);
+		// si existe, avanzamos al panel del cajero y llevamos el atributo de sesion que es la cuenta
+		if (cuenta != null) {
+			sesionCuenta.setAttribute("cuenta", cuenta);
+			List<Movimiento> lista = imov.findMovimientosByIdCuenta(idCuenta);
+			model.addAttribute("listacompletamovimientos", lista);
+			return "redirect:/opcionesCajero";
+			// Si no existe seguimos en la pagina de login y mostramos un mensaje de error.
+		} else {
+			model.addAttribute("fallo", "El numero de cuenta no existe");
+			return "login";
+		}
+	}
+
+	// Método para cerrar la sesion de la cuenta
+
+	@GetMapping("/logout")
+	public String logout(Model model, HttpSession sesionCuenta) {
+		sesionCuenta.removeAttribute("cuenta");
+		sesionCuenta.invalidate();
+		return "redirect:/";
+	}
+}

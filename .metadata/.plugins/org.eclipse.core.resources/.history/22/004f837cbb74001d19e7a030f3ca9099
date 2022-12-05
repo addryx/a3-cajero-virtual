@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Opciones del Cajero</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<div>
+					<a href="/cajero/"><i>Cajero</i></a>
+					<button type="button"><span>boton1</span></button>
+					<div>
+						<ul>
+							<li><a href="/cajero/verMovimientos"><i>Ver Movimientos</i></a></li>
+							<li><a href="/cajero/ingresar"><i>Ingresar</i></a></li>
+							<li><a href="/cajero/extraer"><i>Extraer</i></a></li>
+							<li><a href="/cajero/transferencia"><i> Transferencia</i></a></li>
+							<li><a href="/cajero/verDatosCuenta"><i>ID de la Cuenta: ${cuenta.idCuenta }</i></a></li>
+							<li><a href="/logout"><i> Cerrar Sesión</i></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div>
+			<div>
+				<br>
+				<h4><i> Cuenta y ID: ${cuenta.idCuenta }</i></h4>
+				<h3><i> ${mensajeMovimientos }</i></h3>
+				<h4><span> ${error}</span></h4>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">ID_Movimiento</th>
+							<th scope="col">Fecha</th>
+							<th scope="col">Cantidad</th>
+							<th scope="col">Operación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<c:forEach var="ele" items="${listamovimientos}">
+							<tr>
+								<th scope="row"><i>${ele.idMovimiento }</i></th>
+								<td><i value = "${ ele.fecha }"></i></td>
+								<td>${ele.cantidad }<i></i></td>
+								<c:choose>
+									<c:when test="${ele.operacion =='Ingreso' }">
+										<td>${ele.operacion}</td>
+									</c:when>
+									<c:otherwise>
+										<td>${ele.operacion}</td>
+									</c:otherwise>
+								</c:choose>
+							</tr>
+						</c:forEach>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><i>Saldo Actual</i></td>
+							<td><i>${cuenta.saldo }</i></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button"><a href="/cajero/verMovimientos"><i>${mensajeMasMovimientos }</i></a>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

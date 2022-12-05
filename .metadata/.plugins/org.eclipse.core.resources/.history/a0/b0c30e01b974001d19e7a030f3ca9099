@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+	<p>${fallo}</p>
+	<form action="/login" method="post">
+		<label for="idCuenta" class="form-label fw-bold  "> <i class="bi bi-bank"> ID CUENTA BANCARIA </i></label>
+		<input type="number" name="idCuenta" class="form-control w-50 " id="idCuenta" required>
+		<button type="submit" class="btn btn-success "><i class="bi bi-person ">Login</i></button>
+	</form>
+</body>
+</html>

@@ -15,25 +15,16 @@ import com.edix.cajerovirtual.repository.MovimientoRepository;
 public class MovimientoDaoImpl implements IntMovimientoDao {
 
 	@Autowired
-	private IntMovimientoDao mRepo;
+	private MovimientoRepository mRepo;
 
-	// Con este metodo buscamos todos los movimientos de una cuenta según su
-	// idCuenta, para ello utilizamos nuestro
-	// metodo creado por Query en el Repository
-	
 	@Override
 	public List<Movimiento> findMovimientosByIdCuenta(int idCuenta) {
-
 		return mRepo.findMovimientosByIdCuenta(idCuenta);
-
 	}
 
-	// Con este metodo devolvemos los 10 ultimos movimientos de una cuenta
-	// introducidos en una lista
 	@Override
 	public List<Movimiento> find10UltimosMovimientosbyIdCuenta(int idCuenta) {
-
-		List<Movimiento> lista = new ArrayList()<Movimiento>();
+		List<Movimiento> lista = new ArrayList<Movimiento>();
 		int contador = 0;
 		for (int i = mRepo.findMovimientosByIdCuenta(idCuenta).size() - 1; i >= 0; i--) {
 			lista.add(mRepo.findMovimientosByIdCuenta(idCuenta).get(i));
@@ -45,17 +36,14 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		return lista;
 	}
 
-	// Con este metodo creamos un movimiento de Extraccion
 	@Override
 	public int movimientoExtraccion(Cuenta cuenta, double cantidad) {
-
 		// Creamos un nuevo movimiento
 		Movimiento movimiento = new Movimiento();
 		movimiento.setCuenta(cuenta);
 		movimiento.setFecha(new Date());
 		movimiento.setOperacion("Extracción");
 		movimiento.setCantidad(cantidad);
-
 		// Añadimos el movimiento a la lista de movimientos
 		int filas = 0;
 		try {
@@ -68,16 +56,13 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 		return filas;
 	}
 
-	// Con este metodo creamos un movimiento de ingreso
 	@Override
 	public int movimientoIngreso(Cuenta cuenta, double cantidad) {
-
 		Movimiento movimiento = new Movimiento();
 		movimiento.setCuenta(cuenta);
 		movimiento.setFecha(new Date());
 		movimiento.setOperacion("Ingreso");
 		movimiento.setCantidad(cantidad);
-
 		// Añadimos el movimiento a la lista de movimientos
 		int filas = 0;
 		try {
@@ -85,9 +70,7 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 			filas = 1;
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
 		return filas;
 	}
-
 }

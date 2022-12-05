@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bienvenido al cajero</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<div>
+					<ul>
+						<li><a href="/opcionesCajero/ingresar"><i>Ingresar</i></a></li>
+						<li><a href="/opcionesCajero/extraer"><i>Extraer</i></a></li>
+						<li><a href="/opcionesCajero/verMovimientos"><i>Ver Movimientos</i></a></li>
+						<li><a href="/opcionesCajero/transferencia"><i>Transferencia</i></a></li>
+						<li><a href="/logout"><i>Cerrar Sesión</i></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div>
+			<div>
+				<br>
+				<h4>
+					<i>Cuenta: ${cuenta.idCuenta}</i>
+					<br>
+					<i>Saldo: ${cuenta.saldo}</i>
+				</h4>
+				<h3>
+					<i>${mensajeMovimientos}</i>
+				</h3>
+				<h4>
+					<span>${error}</span>
+				</h4>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

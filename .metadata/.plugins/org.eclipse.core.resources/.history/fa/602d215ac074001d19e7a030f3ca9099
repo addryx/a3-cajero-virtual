@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>${fallo}</p>
+	<form action="/cajero/ingresar" method="post">
+		<div class="mb-3">
+			<label for="cantidad">Introduce Cantidad a Ingresar</label><input type="number" min="1" name="cantidad"
+				class="form-control" id="cantidad" required>
+
+		</div>
+
+		<button type="submit">Ingresar</button>
+	</form>
+</body>
+</html>
