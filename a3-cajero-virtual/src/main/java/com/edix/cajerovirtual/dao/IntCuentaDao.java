@@ -1,0 +1,17 @@
+package com.edix.cajerovirtual.dao;
+
+import java.util.List;
+
+import com.edix.cajerovirtual.entitybeans.Cuenta;
+
+public interface IntCuentaDao {
+
+	List<Cuenta> findAll();
+
+	Cuenta findById(int idCuenta);
+
+	int ingresarDinero(Cuenta cuenta, double cantidad);
+
+	int extraerDinero(Cuenta cuenta, double cantidad);
+
+}

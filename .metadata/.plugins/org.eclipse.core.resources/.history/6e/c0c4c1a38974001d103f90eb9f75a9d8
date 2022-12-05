@@ -1,0 +1,10 @@
+package com.edix.cajerovirtual.dao;
+
+public interface IntMovimientoDao {
+	
+	List<Cuenta> findAll();
+	Cuenta findById(int idCuenta);
+	int ingresarDinero(Cuenta cuenta, double cantidad);
+	int extraerDinero(Cuenta cuenta, double cantidad);
+	
+}
