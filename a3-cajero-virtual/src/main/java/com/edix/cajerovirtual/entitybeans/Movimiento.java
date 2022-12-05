@@ -67,7 +67,6 @@ public class Movimiento implements Serializable { // Denominación de la clase J
 		this.cuenta = cuenta;
 	}
 
-
 	/*
 	 * Getters & Setters
 	 */

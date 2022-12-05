@@ -26,24 +26,6 @@ public class MovimientoDaoImpl implements IntMovimientoDao {
 	}
 	
 	/*
-	 * Método que muestra un listado de los últimos movimientos que ha tenido una cuenta.
-	 * Hemos fijado que muestre un listado máximo de 10 movimientos.
-	 */
-	@Override
-	public List<Movimiento> find10UltimosMovimientosbyIdCuenta(int idCuenta) {
-		List<Movimiento> lista = new ArrayList<Movimiento>();
-		int contador = 0;
-		for (int i = mRepo.findMovimientosByIdCuenta(idCuenta).size() - 1; i >= 0; i--) {
-			lista.add(mRepo.findMovimientosByIdCuenta(idCuenta).get(i));
-			contador++;
-			if (contador == 10) {
-				break;
-			}
-		}
-		return lista;
-	}
-	
-	/*
 	 * Método que permite crear una retirada de una cuenta
 	 */
 	@Override
