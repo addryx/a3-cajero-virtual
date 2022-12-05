@@ -36,7 +36,10 @@ public class CuentaDaoImpl implements IntCuentaDao {
 			return CRepo.findById(idCuenta).orElse(null);
 		}
 	}
-
+	
+	/*
+	 * Con este método ingresamos dinero en una cuenta
+	 */
 	@Override
 	public int ingresarDinero(Cuenta cuenta, double cantidad) {
 		
@@ -54,7 +57,10 @@ public class CuentaDaoImpl implements IntCuentaDao {
 		}
 		return filas;
 	}
-
+	
+	/*
+	 * Con este método retiramos dinero de una cuenta
+	 */
 	@Override
 	public int extraerDinero(Cuenta cuenta, double cantidad) {
 		
